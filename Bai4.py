@@ -155,31 +155,27 @@ def find_valedictorian(records):
     print(" Chúc mừng sinh viên đã đạt thành tích xuất sắc nhất khóa!")
     print("--------------------------")
 
-def main():
-    while True:
-        print("\n===== HỆ THỐNG QUẢN LÝ ĐIỂM THI RIKKEI UNIVERSITY =====")
-        print("1. Xem bảng điểm và học lực")
-        print("2. Cập nhật điểm thi sinh viên")
-        print("3. Báo cáo thống kê (Đỗ/Trượt)")
-        print("4. Tìm sinh viên Thủ khoa")
-        print("5. Thoát chương trình")
-        print("======================================================")
+while True:
+    print("\n===== HỆ THỐNG QUẢN LÝ ĐIỂM THI RIKKEI UNIVERSITY =====")
+    print("1. Xem bảng điểm và học lực")
+    print("2. Cập nhật điểm thi sinh viên")
+    print("3. Báo cáo thống kê (Đỗ/Trượt)")
+    print("4. Tìm sinh viên Thủ khoa")
+    print("5. Thoát chương trình")
+    print("======================================================")
         
-        choice = input("Chọn chức năng (1-5): ").strip()
+    choice = input("Chọn chức năng (1-5): ").strip()
         
-        if choice == "1":
-            display_grades(student_records)
-        elif choice == "2":
-            update_student_score(student_records)
-        elif choice == "3":
-            generate_report(student_records)
-        elif choice == "4":
-            find_valedictorian(student_records)
-        elif choice == "5":
-            print("\nCảm ơn bạn đã sử dụng hệ thống!")
-            break
-        else:
-            print("\nLựa chọn không hợp lệ. Vui lòng nhập từ 1 đến 5!")
-
-if __name__ == "__main__":
-    main()
+    if choice == "1":
+        display_grades(student_records)
+    elif choice == "2":
+        update_student_score(student_records)
+    elif choice == "3":
+        generate_report(student_records)
+    elif choice == "4":
+        find_valedictorian(student_records)
+    elif choice == "5":
+        print("\nCảm ơn bạn đã sử dụng hệ thống!")
+        break
+    else:
+        print("\nLựa chọn không hợp lệ. Vui lòng nhập từ 1 đến 5!")
